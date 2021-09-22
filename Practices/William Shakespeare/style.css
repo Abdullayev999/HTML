@@ -1,0 +1,73 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+}
+
+body .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  background-color: #A23645;
+}
+
+body .head p {
+  padding-left: 5%;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body .body {
+  padding-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .body .bodyPhoto {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background-color: gainsboro;
+  width: 300px;
+  height: 590px;
+}
+
+body .body .bodyPhoto strong {
+  padding-right: 8%;
+}
+
+body .footer {
+  padding-left: 5%;
+  border: 2px solid black;
+  border-style: dotted;
+  padding: 10px;
+  margin: 10px;
+  padding-bottom: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1070px;
+}
+
+body .footer .photo img :nt {
+  height: 160px;
+  width: 130px;
+}
+
+body .footer .photo p {
+  text-align: center;
+}
+
+body h2 {
+  padding-left: 5%;
+}
+/*# sourceMappingURL=style.css.map */

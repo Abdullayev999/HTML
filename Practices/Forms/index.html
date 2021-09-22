@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" </head>
+
+    <body>
+         <form action="" method="GET" style="display: grid; grid-template:repeat(3,1fr) / 1fr 1fr;">
+            <label for="name">Enter your name : <input placeholder="Enter your name" id="name" type="text"></label>
+
+            <label for="surname">Enter your surname : <input placeholder="Enter your surname" id="surname" type="text"></label>
+
+            <label for="password">Enter password : <input placeholder="Enter your password" id="password" type="password"></label>
+
+            <label for="email">Enter email : <input placeholder="Enter your email" id="email" type="email"></label>
+
+            <label>File : <input  type="file" required></label>
+
+            <label>Data : <input  type="date" ></label>
+
+            <label>Time : <input  type="time" ></label>
+
+            <label>Is married : <input  type="checkbox" ></label>
+
+            <div>
+                <h3>Gender : </h3>
+                <label>Male <input checked type="radio" name="gender" value="male"></label>
+                <label>Female <input  type="radio" name="gender" value="female" ></label>
+                <label>Other <input  type="radio" name="gender"  value="other"></label>
+            </div>
+
+            <select>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <select multiple>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Range : <input  type="range" max="10" min="0" ></label>
+
+            <textarea cols="10" rows="5"></textarea>
+
+
+
+            <label>Color : <input  type="color" ></label>
+
+
+              supper for search suwestvueyox  
+            <datalist id="myList">
+                <option value="Programmer">Male</option>
+                <option value="HR">Female</option>
+                <option value="Biznes">Other</option>
+                <option value="HRaa">haaa</option> 
+            </datalist>
+            <input type="text" list="myList">
+            <input type="submit" value="Ok">
+        </form>  
+
+        <!-- <form method="GET">
+            <label for="email">Enter email : <input type="email" name="email" id="email"></label><br>
+            <label for="password">Enter password : <input type="password" name="pasik" id="password"></label><br>
+            <button type="submit">Login</button>
+        </form> -->
+
+
+        <!-- <form action="http://www.omdbapi.com/" method="GET">
+            <label for="apikey">Apikey :</label>
+            <input type="text" id="apikey" name="apikey">
+            <br>
+            <label for="search">Movie name:</label>
+            <input type="text" id="search" name="s">
+            <br>
+            <input type="submit">
+        </form> -->
+
+
+
+        <form>
+            <label for="name"></label>
+            <input maxlength="10" required placeholder="Enter your name" id="name" type="text">
+            <input required type="number" id="age" min="1" max="100">
+            <button>Send</button>
+        </form>
+    </body>
+
+</html>

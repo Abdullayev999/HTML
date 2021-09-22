@@ -1,0 +1,43 @@
+.button {
+    border: 2px solid red;
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+    p {
+        text-align: center;
+        color: red;
+    }
+    .fill {
+        background-color: rebeccapurple;
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        left: 0px;
+        width: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    &:hover .fill {
+        transition: 1s;
+        width: 100%;
+    }
+}
+
+h1 {
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+.podFill {
+    background-color: blue;
+    width: 4px;
+    height: 3px;
+    transition: 1.5s;
+    margin-bottom: 10px;
+}
+
+.vibor:hover .podFill {
+    width: 90px;
+    transition: 1.5s;
+    color: rebeccapurple;
+}

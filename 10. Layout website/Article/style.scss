@@ -1,0 +1,64 @@
+.photo {
+    padding-top: 40px;
+    position: relative;
+    margin-right: 40px;
+    p {
+        border-end-end-radius: 20px;
+        border-end-start-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #37516B;
+        color: white;
+        width: 350px;
+        height: 40px;
+        position: absolute;
+        bottom: 0px;
+        top: 250px;
+    }
+}
+
+body {
+    min-width: 450px;
+    padding-left: 20px;
+    display: grid;
+    padding-bottom: 70px;
+    grid-template: "first-text photo1" "second-text photo2";
+    .text-content:nth-child(1) {
+        grid-area: first-text;
+    }
+    .text-content:nth-child(3) {
+        grid-area: second-text;
+    }
+    .photo:nth-child(1) {
+        grid-area: photo1;
+    }
+    .photo-content:nth-child(3) {
+        grid-area: photo2;
+    }
+    @media (max-width:950px) {
+        grid-template: "first-text first-text" "photo1 photo2" "second-text second-text";
+        .text-content {
+            padding-top: 30px;
+        }
+    }
+    @media (max-width:756px) {
+        box-sizing: border-box;
+        grid-template: "first-text" "first-text" "photo1" "second-text" "photo2";
+        .text-content {
+            width: 450px;
+            padding-top: 30px;
+        }
+        .photo {
+            padding-left: 30px;
+        }
+    }
+}
+
+.text-content {
+    padding-right: 20px;
+}
+
+img {
+    width: 350px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p,
+        h1 {
+            color: red;
+        } */
+        /* .box+p {   k sosednimu 
+            color: red;
+        }
+
+        .box > p { k vlojennumu 
+            color: red;
+        } */
+        /* .box~p { vse kotorie ne vxodyat v box i idut posle boxa
+            color: red;
+        } */
+        
+        .box~p {
+            color: red;
+        }
+        /*         
+        [title] {
+            background-color: rosybrown;
+        } */
+        
+        p[title] {
+            background-color: rosybrown;
+        }
+        /* .box+p~* { vse sdeluwie elementi posle box p 
+            border: 5px solid black;
+        } */
+        
+        ul li {
+            text-decoration: underline
+        }
+        
+        ul li:last-child {
+            color: red;
+        }
+        
+        ul li:first-child {
+            color: yellow;
+        }
+        
+        ul li:nth-child(5) {
+            color: blue;
+        }
+        /* 
+        ul li:nth-child(3n) { kajdomu cerez 3
+            color: blue;
+        } */
+        /* ul li:nth-child(event) { kajdomu cetnomu elementu
+            color: blue;
+        } */
+        /* ul li:nth-child(odd) { kajdomu necotnomu elementu
+            color: blue;
+        } */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+    <p>Lorem, ipsum dolor.</p>
+    <h1 title="privet">Hello!</h1>
+    <div class="box">
+        <p title="odin">One</p>
+        <div>
+            <p title="dva">Two</p>
+            <p title="tri">Three</p>
+        </div>
+    </div>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus harum veritatis voluptatum repellat laudantium reiciendis, pariatur blanditiis aliquam, delectus rerum ad vero est doloremque enim ratione? Libero fugiat porro aperiam.</p>
+
+</body>
+
+</html>

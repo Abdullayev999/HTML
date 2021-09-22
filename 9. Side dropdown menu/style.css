@@ -1,0 +1,68 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+}
+
+.container .leftMenyu {
+  position: fixed;
+  background-color: #8A8A8A;
+  width: 110px;
+  height: 100%;
+}
+
+.container .leftMenyu img {
+  padding-right: 10px;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  margin: 0%;
+}
+
+.container .leftMenyu p {
+  color: #F6F6F6;
+  font-size: larger;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.container .leftMenyu .Item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container .leftMenyu .Item:hover {
+  background-color: #696969;
+  width: 220px;
+}
+
+.container .leftMenyu:hover {
+  width: 220px;
+}
+
+.container .rightMenyu {
+  background-color: #F6F6F6;
+  width: 100%;
+}
+
+.container .rightMenyu .information {
+  padding: 20px 100px 0px 200px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,70 @@
+body {
+  background-color: antiquewhite;
+  margin: 0%;
+  padding: 0%;
+}
+
+.box {
+  border: 2px solid blue;
+}
+
+.box p {
+  color: blue;
+  font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.box p:hover {
+  color: gray;
+}
+
+.box + p {
+  font-size: 9px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.color {
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  border: 2px solid black;
+}
+
+.color:nth-child(1) {
+  background-color: #2178f7;
+}
+
+.color:nth-child(2) {
+  background-color: #f13d20;
+}
+
+.color:nth-child(3) {
+  background-color: #1e0c65;
+}
+
+.color:nth-child(4) {
+  background-color: #7e5e9a;
+}
+
+.color:nth-child(5) {
+  background-color: #261f92;
+}
+
+.color:nth-child(6) {
+  background-color: #9eaef4;
+}
+
+.color:nth-child(7) {
+  background-color: #554403;
+}
+
+.color:nth-child(8) {
+  background-color: #15ae19;
+}
+
+.color:nth-child(9) {
+  background-color: #f8a701;
+}
+/*# sourceMappingURL=style.css.map */

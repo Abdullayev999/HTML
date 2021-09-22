@@ -1,0 +1,22 @@
+.bg-blue {
+  background-color: #1B5589;
+}
+
+.icons-mini {
+  height: 26px;
+}
+
+.bg-blue-light {
+  background-color: #CCE5FF;
+}
+
+.icon {
+  height: 40px;
+}
+
+@media (max-width: 992px) {
+  .icon {
+    display: none;
+  }
+}
+/*# sourceMappingURL=setting.css.map */

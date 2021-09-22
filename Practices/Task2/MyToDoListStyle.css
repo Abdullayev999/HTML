@@ -1,0 +1,93 @@
+.container {
+  margin: 10%;
+  padding-bottom: 1%;
+  margin-top: 0px;
+  background-color: #F5F5F5;
+}
+
+.container h1 {
+  margin-left: 5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container ul {
+  list-style-type: none;
+}
+
+.container ul .item {
+  padding-left: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #C66376;
+  margin-right: 5%;
+  word-spacing: 5spx;
+  letter-spacing: 1px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.container ul .item img {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container ul .item span {
+  font-size: 8px;
+}
+
+.container ul .item li {
+  margin: 10px 15px;
+}
+
+.container ul .item:nth-child(1) {
+  background-color: #A5CCDA;
+}
+
+.container ul .item:nth-child(2) {
+  background-color: #E2E2E2;
+}
+
+.container ul .item:nth-child(3) {
+  background-color: #A5CCDA;
+}
+
+.container ul .item:nth-child(4) {
+  background-color: #ADD8E6;
+}
+
+.container ul .item:nth-child(5) {
+  background-color: #E2E2E2;
+}
+
+.container ul .item:nth-child(6) {
+  background-color: #ADD8E6;
+}
+
+.container ul .item:nth-child(7) {
+  background-color: #A5CCDA;
+}
+
+.container ul .item:nth-child(8) {
+  background-color: #ADD8E6;
+}
+
+.container ul .item:nth-child(9) {
+  background-color: #A5CCDA;
+}
+
+.container ul .item:nth-child(10) {
+  background-color: #ADD8E6;
+}
+
+.container ul .item:nth-child(11) {
+  background-color: #E2E2E2;
+}
+
+.container ul .item:nth-child(12) {
+  background-color: #ADD8E6;
+}
+/*# sourceMappingURL=MyToDoListStyle.css.map */

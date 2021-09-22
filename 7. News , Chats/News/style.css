@@ -1,0 +1,126 @@
+.container {
+  padding: 0px 30px;
+  background-color: #ADD8E6;
+  height: 800px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -ms-grid;
+  display: grid;
+  margin: 10px;
+  gap: 20px;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template: 1fr / 1fr 1fr 1fr;
+  max-width: 1000px;
+}
+
+.container .box-for-photo > p {
+  font-size: 20px;
+}
+
+.container .first .card:nth-child(1) {
+  height: 27%;
+}
+
+.container .first .card:nth-child(1) .box-for-photo {
+  height: 30%;
+}
+
+.container .first .card:nth-child(2) {
+  height: 20%;
+}
+
+.container .first .card:nth-child(2) .box-for-photo {
+  height: 50%;
+}
+
+.container .first .card:nth-child(3) {
+  height: 26%;
+}
+
+.container .first .card:nth-child(3) .box-for-photo {
+  height: 25%;
+}
+
+.container .second .card:nth-child(1) {
+  height: 22%;
+}
+
+.container .second .card:nth-child(1) .box-for-photo {
+  height: 30%;
+}
+
+.container .second .card:nth-child(2) {
+  height: 25%;
+}
+
+.container .second .card:nth-child(2) .box-for-photo {
+  height: 40%;
+}
+
+.container .second .card:nth-child(3) {
+  height: 30%;
+}
+
+.container .second .card:nth-child(3) .box-for-photo {
+  height: 30%;
+}
+
+.container .third .card:nth-child(1) {
+  height: 25%;
+}
+
+.container .third .card:nth-child(1) .box-for-photo {
+  height: 30%;
+}
+
+.container .third .card:nth-child(2) {
+  height: 30%;
+}
+
+.container .third .card:nth-child(2) .box-for-photo {
+  height: 50%;
+}
+
+.container .third .card:nth-child(3) {
+  height: 33%;
+}
+
+.container .third .card:nth-child(3) .box-for-photo {
+  height: 40%;
+}
+
+.card {
+  margin: 10px;
+  background-color: white;
+  width: 100%;
+}
+
+.card .box-for-photo {
+  color: #A4A4A4;
+  background-color: #C3C3C3;
+}
+
+.card .box-for-photo p {
+  margin: 0%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .title {
+  padding: 10px;
+}
+
+.card p {
+  margin: 4px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

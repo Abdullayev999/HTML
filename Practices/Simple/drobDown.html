@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropDown {
+            width: 200px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: burlywood;
+        }
+        
+        .dropDown ul {
+            display: none;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            top: 50px;
+            width: 100%;
+            background-color: white;
+        }
+        
+        .dropDown:hover ul {
+            display: block;
+        }
+        
+        .dropDown ul li:hover {
+            background-color: gray;
+        }
+        /* li::after { dobovlyayet cto to v konec
+            content: '+';
+        } */
+        /* li::before {dobovlyayet cto to v nacalo
+            content: '+';
+        } */
+        
+        li::before {
+            content: '+';
+            width: 10px;
+            background-size: cover;
+            /* background-color: green; */
+            background-image: url(./puwkin.jpg);
+            height: 10px;
+            display: inline-block;
+        }
+        /* li::first-letter { pervaya bukva
+            color: indianred;
+        }
+
+        li::first-line { pervaya liniya teksta
+            color: indianred;
+        } */
+        /* *::selection { videlenniy texts
+            background-color: darkorchid;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="dropDown">
+        <p>Button</p>
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+
+        </ul>
+    </div>
+    <img src="./puwkin.jpg" alt="puwkin">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d240563.67327305776!2d49.77458951076302!3d40.4952565557191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m3!3m2!1d40.4357573!2d49.967393099999995!4m0!5e0!3m2!1sru!2s!4v1621174733171!5m2!1sru!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iq1yzZxwU9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.meclis.gov.az/index.php?lang=az" frameborder="0"></iframe>
+</body>
+
+</html>

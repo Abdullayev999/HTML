@@ -1,0 +1,28 @@
+body {
+    background-color: #F6F6F6;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    padding: 10px 120px;
+    margin: 10px;
+    text-align: center;
+}
+
+.item {
+    /* display: flex; */
+    margin: 10px;
+    padding: 7px;
+    border: 2px solid #CFCFCF;
+    border-radius: 25px;
+}
+
+img {
+    margin: 25px;
+    margin-bottom: 10px;
+    width: 140px;
+    height: 135px;
+}

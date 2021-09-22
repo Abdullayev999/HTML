@@ -1,0 +1,14 @@
+.carousel-inner img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#ok img {
+  height: 400px;
+}
+/*# sourceMappingURL=style.css.map */

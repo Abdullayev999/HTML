@@ -1,0 +1,60 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 2px solid black;
+    transition: 2s;
+    //transition-delay: 3s; //zaderjka
+    //transition-timing-function: cubic-bezier(0.75, 0.001, 0.001, 1);//forma animacii
+    &:hover {
+        background-color: red;
+        transition: 2s;
+    }
+}
+
+@keyframes test-animation {
+    0% {
+        background-color: aliceblue;
+        transform: translate(0px, 0px);
+    }
+    25% {
+        background-color: gray;
+        transform: translate(300px, 0px);
+    }
+    50% {
+        background-color: gold;
+        transform: translate(300px, 300px);
+    }
+    75% {
+        background-color: green;
+        transform: translate(0px, 300px);
+    }
+    100% {
+        background-color: aqua;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes myAnimation {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+.test {
+    width: 100px;
+    height: 100px;
+    background-color: gainsboro;
+    border: 2px solid black;
+    &:hover {
+        animation-name: test-animation;
+        animation-duration: 3s; //время за один цикл
+        animation-iteration-count: 2; //colicestvo ciklov
+        animation-iteration-count: infinite; //beskonecno
+        animation-direction: alternate; //kakim sposobom idti nazad vpered
+        animation-play-state: paused; //PAUZA
+    }
+}

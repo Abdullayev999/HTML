@@ -1,0 +1,47 @@
+@import 'body'; //podllyucenie druqoy scss
+//
+@mixin paket-atrib {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+@mixin paket-atrib-param($textSize:'16px') {
+    font-size: $textSize;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+//
+$myColor: blue;
+//
+.box {
+    border: 2px solid blue;
+    p {
+        color: $myColor;
+        @include paket-atrib();
+        &:hover {
+            //font-size: 50px;
+            //color: darken($myColor, 40);
+            // color: desaturate($myColor, 90);
+            color: grayscale($myColor);
+        }
+    }
+}
+
+.box+p {
+    @include paket-atrib-param(9px);
+}
+
+.color {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+}
+
+@for $var from 1 to 10 {
+    .color:nth-child(#{$var}) {
+        background-color: rgb(random(255), random(255), random(255))
+    }
+}

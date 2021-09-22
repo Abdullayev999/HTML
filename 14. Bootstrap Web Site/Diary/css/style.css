@@ -1,0 +1,74 @@
+.bg-blue {
+  background-color: #1B5589;
+}
+
+.icons {
+  height: 40px;
+}
+
+.icon {
+  height: 40px;
+}
+
+@media (max-width: 992px) {
+  .icon {
+    display: none;
+  }
+}
+
+.reverse {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  text-align: center;
+}
+
+.bx-pager {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 34px;
+  border-left: 1px solid #DFDFDF;
+}
+
+.bx-pager .bx-pager-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+p {
+  padding: 0px 5px;
+}
+
+.bx-pager .bx-pager-item .bx-pager-link {
+  text-decoration: none;
+  color: #222;
+  font-size: 17px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.bx-pager .bx-pager-item .arrow {
+  border: solid #DFDFDF;
+  display: inline-block;
+  padding: 9px;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: translateY(15.5px) rotate(-45deg) skew(-15deg, -15deg) translateX(18px);
+          transform: translateY(15.5px) rotate(-45deg) skew(-15deg, -15deg) translateX(18px);
+  background-color: #FFF;
+}
+/*# sourceMappingURL=style.css.map */

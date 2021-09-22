@@ -1,0 +1,194 @@
+$one:#A3D8D8;
+$two:#FFB7A6;
+$three:#DB6E6B;
+$four:#EFD3C1;
+$five:#FFF5F2;
+body {
+    background-color: $one;
+    position: relative;
+    min-height: 100vh;
+    margin: 0%;
+    padding-bottom: 100px;
+}
+
+header {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    background-color: gainsboro;
+    display: flex;
+    align-items: flex-end;
+    .logo {
+        height: 70%;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+            height: 100px;
+        }
+        .menyu-btn {
+            height: 30px;
+            padding: 20px;
+            display: none;
+        }
+    }
+    nav {
+        background-color: $three;
+        height: 30%;
+        width: 100%;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0%;
+        margin: 0%;
+        height: 100%;
+        li {
+            display: flex;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 100%;
+            &:hover {
+                background-color: $four;
+            }
+        }
+    }
+}
+
+main {
+    //height: 600px; 
+    background-color: $five;
+    display: flex;
+    min-height: calc(100vh-100px-200px);
+    aside {
+        width: 30%;
+        height: 100%;
+        border: black 2px solid;
+        background-color: $five;
+        ul {
+            padding: 20px;
+            list-style: none;
+            color: $one;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+    section {
+        width: 70%;
+        height: 100%;
+        border: black 2px solid;
+        background-color: $two;
+        padding: 20px;
+        .gallery {
+            width: 100%;
+            display: grid;
+            grid-template: 280px 280px / 1fr 1fr 1fr;
+            gap: 10px;
+            @media (max-width: 700px) {
+                grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+            }
+            @media (max-width:1100px) {
+                grid-template: 1fr 1fr 1fr / 1fr 1fr;
+            }
+            @media (max-width:550px) {
+                grid-template: 1fr 1fr 1fr 1fr 1fr 1fr/1fr;
+            }
+            img {
+                width: 100%;
+                height: 260px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+footer {
+    height: 100px;
+    background-color: $three;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    width: auto;
+}
+
+.container {
+    max-width: 1800px;
+    margin: auto;
+}
+
+@media (max-width:950px) {
+    header {
+        height: auto;
+        nav {
+            ul {
+                flex-direction: column;
+                align-items: flex-start;
+                li {
+                    width: 100%;
+                }
+            }
+        }
+        .logo .menyu-btn {
+            height: 30px;
+            display: inline;
+            &:hover {
+                background-color: gainsboro;
+            }
+        }
+    }
+    main {
+        flex-direction: column;
+        aside,
+        section {
+            width: 100%;
+        }
+    }
+}
+
+//  body {
+//      background-color: antiquewhite;
+//  }
+//  @media (max-width:800px) {
+//      body {
+//          background-color: red;
+//      }
+//  }
+//  @media (max-width:600px) {
+//      body {
+//          background-color: blue;
+//      }
+//  }
+//  @media (max-width:500px) {
+//      body {
+//          background-color: green;
+//      }
+//  }
+//  //  @media (min-width:1000px) {
+//  //      body {
+//  //          background-color: blue;
+//  //      }
+//  //  }
+* {
+    box-sizing: border-box;
+}
+
+// @media (max-width:700px) {
+//     main section .gallery {
+//         grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+//     }
+// }
+// @media (max-width:1100px) {
+//     main section .gallery {
+//         grid-template: 1fr 1fr 1fr / 1fr 1fr;
+//     }
+// }
+// @media (max-width:550px) {
+//     main section .gallery {
+//         grid-template: 1fr 1fr 1fr 1fr 1fr 1fr/1fr;
+//     }
+// }

@@ -1,0 +1,273 @@
+.container {
+  padding-bottom: 20px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #F5F5F5;
+  min-width: 600px;
+}
+
+.container header {
+  background-color: #0F4371;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding: 0px 80px;
+}
+
+.container header a {
+  color: white;
+  text-decoration: none;
+}
+
+.container form {
+  height: calc(100% - 60px);
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 70px 1fr;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template: 70px 1fr / 1fr 3fr;
+}
+
+.container form .content-head {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 5px 10px;
+}
+
+.container form .content-head label input {
+  margin-bottom: 10px;
+}
+
+.container form .content-head .search {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.container form .content-head .search .input-container {
+  border: 1px solid #C4C2C5;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 30px;
+}
+
+.container form .content-head .search .input-container .input-field {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.container form .content-head .search .input-container .input-field::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: #C4C2C5;
+}
+
+.container form .content-head .search .input-container .input-field:-ms-input-placeholder {
+  padding-left: 10px;
+  color: #C4C2C5;
+}
+
+.container form .content-head .search .input-container .input-field::-ms-input-placeholder {
+  padding-left: 10px;
+  color: #C4C2C5;
+}
+
+.container form .content-head .search .input-container .input-field::placeholder {
+  padding-left: 10px;
+  color: #C4C2C5;
+}
+
+.container form .content-head .search .input-container img {
+  background-color: white;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.container form .content-head .search select {
+  margin: 0px 5px;
+  height: 31px;
+  border: none;
+  width: 100%;
+  border: 1px solid #C4C2C5;
+  color: #C4C2C5;
+  border-radius: 5px;
+}
+
+.container form .content-head .search button {
+  width: 100%;
+  border: none;
+  background-color: #0F4371;
+  border-radius: 5px;
+  color: white;
+}
+
+.container form .content-left {
+  border: 2px solid #C4C2C5;
+  background-color: white;
+  border-radius: 2px;
+  padding-left: 30px;
+  min-width: 180px;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.container form .content-left h3 {
+  font-size: 20px;
+}
+
+.container form .content-left p {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #0F4371;
+  font-weight: bold;
+}
+
+.container form .content-left .price {
+  height: 45px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 80px 1fr;
+      grid-template: 1fr 1fr / 80px 1fr;
+}
+
+.container form .content-left .price .cost {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container form .content-left .price .cost input {
+  width: 55px;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #C4C2C5;
+  margin: 0px 2px;
+}
+
+.container form .content-right {
+  background-color: white;
+  border: 2px solid #C4C2C5;
+  border-radius: 2px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.container form .content-right h3 {
+  margin: 0%;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+
+.container form .content-right .top-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.container form .content-right .content {
+  height: 100%;
+}
+
+.container form .content-right .content table {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 80%;
+  border-collapse: collapse;
+}
+
+.container form .content-right .content table thead {
+  background-color: #F5F5F5;
+  border-top: 2px solid #C4C2C5;
+  border-bottom: 2px solid #C4C2C5;
+  border-collapse: collapse;
+  margin: 0%;
+  padding: 0%;
+  height: 50px;
+}
+
+.container form .content-right .content table thead th {
+  color: #3D5982;
+  width: calc(100% / 6);
+}
+
+.container form .content-right .content table tbody tr {
+  border-bottom: 1px solid #C4C2C5;
+}
+
+.container form .content-right .content table tbody th {
+  color: #3D5982;
+  width: calc(100% / 6);
+  height: calc(100% / 6);
+}
+
+.container form .content-right .content table tbody th p {
+  margin: 0px;
+}
+
+.container form .content-right .content table tbody th small {
+  color: #C4C2C5;
+  font-size: 10px;
+}
+
+.container form .content-right .content table tbody :nth-child(6) a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.container form .content-right .content table tbody button {
+  background-color: #0F4371;
+  color: white;
+  height: 28px;
+  width: 60px;
+  border-radius: 5px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+/* Style the input container */
+/*# sourceMappingURL=style.css.map */

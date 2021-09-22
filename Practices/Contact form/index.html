@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        color: white;
+        background-image: url('./by-the-sea.jpg'); 
+        background-repeat: no-repeat;
+        width: 700px;
+        height: 700px;
+        margin: 5%;
+        
+        
+    }
+
+
+    form{
+        padding: 5%;
+        width: 500px;
+        height: 500px;
+        margin: 10%;
+        border: 2px solid black;
+        box-shadow:0 0 4px 1px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+ .leftmain{
+     width: 30%;
+     height: 300px;
+
+ }
+
+ p{
+     padding-top: 10px;
+     padding-left: 10px;
+ }
+
+ .rightmain{
+     padding: 10px;
+     width: 70%;
+     height: 100%;
+     box-sizing: border-box;
+ }
+
+ .one{
+     padding-bottom:27px;
+     padding-left: 10px;
+     display: flex;
+ }
+
+ input{
+
+     width: 140px;
+     margin-left: 10px;
+ }
+
+ .long{
+     width: 300px;
+ }
+ .three{
+     width: 87px;
+ }
+
+ .tolstiy{
+     height: 60px;
+     width: 300px;
+ }
+
+ .button{
+background: transparent;
+width: 480px;
+height: 30px;
+ }
+
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+          <h1>Contact form</h1>
+          <p>Please fill in your information and we'll be sending your order</p>
+          <main>
+           <div class="leftmain">
+                    <p>Your name</p>
+                    <p>Your email</p>
+                    <p>Phone *</p>
+                    <p>Message subject *</p>
+                    <p>Message *</p>
+
+           </div>
+           <div class="rightmain">
+              <div class="one">
+                <input type="text"> 
+                 <input type="text">
+              </div>
+              <div class="one">
+                <input type="text"> 
+                 <input type="text">
+              </div>
+              <div class="one">
+                <input class="long" type="text"> 
+              </div>
+              <div class="one">
+                <input class="three" type="text"> 
+                <input class="three" type="text"> 
+                <input class="three" type="text"> 
+              </div>
+              <div class="one">
+                <input class="tolstiy" type="text"> 
+              </div>
+        </div>
+          </main>
+          <hr>
+          <input class="button" type="submit" value="SUBMIT FORM">
+    </form>
+</body>
+</html>

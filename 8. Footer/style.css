@@ -1,0 +1,58 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+p {
+    text-align: center;
+}
+
+.footer {
+    padding: 10px;
+    background-color: #2A4F6E;
+    height: 150px;
+}
+
+.container {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menyu {
+    height: 95%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menyu1 {
+    margin-top: 30px;
+    height: 30px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.fb:hover {
+    content: url("./fb.png");
+}
+
+.insta:hover {
+    content: url("./insta.png");
+}
+
+.youtub:hover {
+    content: url("./youtube.png");
+}

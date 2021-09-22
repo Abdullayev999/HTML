@@ -1,0 +1,49 @@
+@import 'body';
+$text-color:green;
+.color {
+    width: 100px;
+    height: 100px;
+}
+
+@for $i from 1 through 8 {
+    .color:nth-child(#{$i}) {
+        background-color: rgb(random(255), random(255), random(255));
+    }
+}
+
+.color:nth-child(2) {
+    background-color: yellow
+}
+
+// @mixin text {
+//     font-size: 20px;
+//     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//     font-weight: bold;
+// }
+// h1 {
+//     @include text;
+// } 
+@mixin text($textSize:'16px') {
+    font-size: $textSize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    @include text(20px);
+}
+
+.box {
+    border: 2px solid black;
+    p {
+        @include text;
+        color: $text-color;
+        &:hover {
+            color: darken($text-color, 4%);
+        }
+    }
+}
+
+// .box p:hover {
+//     color: white;
+// }

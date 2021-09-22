@@ -1,0 +1,208 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.container {
+  max-width: 1800px;
+  margin: auto;
+}
+
+header {
+  height: 200px;
+  background-color: #F5E082;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .logo .menyu-btn {
+  display: none;
+  height: 30px;
+}
+
+header nav {
+  height: 30%;
+  width: 100%;
+  background-color: #F5A18B;
+}
+
+header nav ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header nav ul li:hover {
+  background-color: #A1EB91;
+  color: white;
+}
+
+main {
+  background-color: #88DCF7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: calc(100vh-100px-200px);
+}
+
+main aside {
+  width: 30%;
+  height: 100%;
+  background-color: #B47CDE;
+  min-height: calc(100hv-100px-200px);
+}
+
+main aside ul {
+  list-style: none;
+  color: #A1EB91;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+main section {
+  width: 70%;
+  height: 100%;
+  background-color: #F5E082;
+  padding: 20px;
+  min-height: calc(100vh-100px-200px);
+}
+
+main section .gallery {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-rows: 150px 150px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template: 150px 150px / 1fr 1fr 1fr;
+}
+
+@media (max-width: 1100px) {
+  main section .gallery {
+    -ms-grid-rows: (150px)[3];
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: repeat(3, 150px)/1fr 1fr;
+  }
+}
+
+@media (max-width: 950px) {
+  main section .gallery {
+    -ms-grid-rows: (150px)[2];
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template: repeat(2, 150px)/1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  main section .gallery {
+    -ms-grid-rows: 150px 150px 150px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 150px 150px 150px / 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  main section .gallery {
+    -ms-grid-rows: (150px)[6];
+    -ms-grid-columns: 1fr;
+        grid-template: repeat(6, 150px)/1fr;
+  }
+}
+
+main section .gallery img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  height: 100px;
+  background-color: #A1EB91;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+@media (max-width: 950px) {
+  header {
+    height: auto;
+  }
+  header .logo .menyu-btn {
+    display: inline;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header nav ul li {
+    width: 100%;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main aside,
+  main section {
+    width: 100%;
+    height: 50%;
+  }
+}
+/*# sourceMappingURL=ResposiveStyle.css.map */

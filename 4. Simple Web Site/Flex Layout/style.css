@@ -1,0 +1,60 @@
+.header {
+    background-color: aquamarine;
+    height: 60px;
+    display: flex;
+}
+
+img {
+    height: 60px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    box-sizing: border-box;
+    margin: 0%;
+    letter-spacing: 5px;
+}
+
+.loc-bar ul {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    margin: 0%;
+}
+
+.loc-bar ul li {
+    list-style-type: none;
+}
+
+.loc-bar ul li a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+p {
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    background-color: aquamarine;
+    height: 100%;
+}
+
+.left {
+    background-color: chocolate;
+    width: 20%;
+}
+
+.right {
+    width: 80%;
+    background-color: thistle;
+}
+
+.footer {
+    background-color: grey;
+    height: 100px;
+}

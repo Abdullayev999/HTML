@@ -1,0 +1,28 @@
+﻿.box {
+    background-color: red;
+}
+
+div {
+    color: white;
+    background-color: #C66376;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    padding-left: 55px;
+}
+
+ol {
+    background-color: #ED9EAE;
+    padding: 50px;
+}
+
+span {
+    padding: 0px 25px;
+    font-size: 40px;
+    margin-left: 6px;
+    background-color: #9E354A;
+}
+
+li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}

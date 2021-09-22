@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/113f611071.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: whitesmoke;
+            background-image: url(./slider-bg-1.jpg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            font-family: OswaldLigh;
+        }
+        
+        .container {
+            width: 1000px;
+            margin: auto;
+            height: 1000px;
+            /* background-color: white; */
+            margin-top: 27px;
+        }
+        
+        .menu {
+            height: 74px;
+            background-color: #414146;
+            display: flex;
+        }
+        
+        .logo-container {
+            width: 45%;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-container img {
+            height: 20px;
+            width: 100px;
+            margin-left: 30px;
+        }
+        
+        .menu-items {
+            width: 40%;
+        }
+        
+        .search {
+            width: 15%;
+            background-color: #565A60;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        .search img {
+            width: 15px;
+            height: 15px;
+        }
+        
+        .menu-items ul {
+            display: flex;
+            list-style: none;
+            color: white;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            justify-content: space-evenly;
+        }
+        
+        .menu-items ul li {
+            height: 100%;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+        }
+        
+        .menu-items ul li:hover {
+            background-color: #ffea00;
+            cursor: pointer;
+        }
+        
+        .menu-items ul li a {
+            text-decoration: none;
+            color: white;
+            /* font-family: OswaldLigh; */
+            text-transform: uppercase;
+        }
+        
+        .menu-items ul li:hover a {
+            color: #414146;
+        }
+        
+        @font-face {
+            /* font-family: 'Shadows Into Light', cursive; */
+            font-family: OswaldLigh;
+            src: url(./Oswald-Light-webfont.woff);
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+        .fa-search {
+            color: white;
+        }
+        
+        .search-btn:hover {
+            background-color: #ffea00;
+            cursor: pointer;
+        }
+        
+        .search-btn:hover .fa-search {
+            color: #414146;
+        }
+        
+        .search-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        
+        .slider {
+            display: flex;
+            padding: 50px;
+        }
+        
+        .slider-text {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        
+        .slider-image {
+            width: 40%;
+        }
+        
+        .slider-text h1 {
+            color: #414146;
+            background-color: #ffea00;
+            width: auto;
+            padding: 5px 10px;
+            font-weight: normal;
+        }
+        
+        .slider-text h2 {
+            color: white;
+            background-color: #565A60;
+            padding: 5px 10px;
+            font-weight: normal;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        
+        .slider-text .read-more-btn {
+            background-color: #414146;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        
+        .slider-text .read-more-btn p {
+            margin: 0;
+            padding: 5px 10px;
+        }
+        
+        .slider-text .read-more-btn i {
+            margin: 0;
+            padding: 5px 10px;
+            background-color: #ffea00;
+            color: #565A60;
+            align-items: center;
+            display: flex;
+            box-sizing: border-box;
+            height: 100%;
+        }
+        
+        .services {
+            display: flex;
+            height: 252px;
+        }
+        
+        .service {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+        }
+        
+        .service img {
+            box-sizing: border-box;
+            height: 70px;
+            transition: 0.5s;
+        }
+        
+        .service:nth-child(1) {
+            background-color: white;
+        }
+        
+        .service:nth-child(2) {
+            background-color: hsl(55, 100%, 50%)
+        }
+        
+        .service:nth-child(3) {
+            background-color: hsl(55, 100%, 46%)
+        }
+        
+        .service:nth-child(4) {
+            background-color: hsl(55, 100%, 42%)
+        }
+        
+        .service:hover {
+            background-color: white;
+        }
+        
+        .service:hover img {
+            /* height: 90px;
+            margin: -10px 0px; */
+            transform: scale(1.3);
+            /* transition: 0.7s; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo-container">
+                <img src="./logo-retina.png" alt="logo">
+            </div>
+            <div class="menu-items">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <div class="search-btn">
+
+                    <i class="fas fa-search"></i>
+                </div>
+                <!-- <i class="fas fa-search" style="color: white;"></i> -->
+                <!-- <img src="./magnifying-glass.svg" alt="logo-search"> -->
+            </div>
+
+
+        </div>
+
+        <div class="slider">
+            <div class="slider-text">
+                <h1>Lorem ipsum.</h1>
+                <h2>Lorem, ipsum dolor.</h2>
+                <div class="read-more-btn">
+                    <p>read more</p>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <div class="slider-image">
+                <img src="./slider-item-2.png" alt="item">
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="service"></div>
+            <div class="service">
+                <img src="./icon-comp.png" alt="komp">
+                <p class="big-text">Lorem, ipsum dolor.</p>
+                <p class="small-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="service">
+                <img src="./icon-comp.png" alt="komp">
+                <p class="big-text">Lorem, ipsum dolor.</p>
+                <p class="small-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="service">
+                <img src="./icon-comp.png" alt="komp">
+                <p class="big-text">Lorem, ipsum dolor.</p>
+                <p class="small-text">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

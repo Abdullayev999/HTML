@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <p><b>Inputs</b></p>
+        <div class="text-valid">
+            <div class="valid simple">
+                <input placeholder="Enter some text" type="text">
+            </div>
+
+            <div class="valid succes">
+                <input placeholder="valid text" type="text">
+                <label>✔</label>
+            </div>
+
+            <div class="valid error">
+                <input placeholder="invalid text" type="text">
+                <label>❌</label>
+            </div>
+        </div>
+
+        <p><b>Check boxes</b></p>
+        <div class="box">
+            <label class="switch">
+                <input class="checkbox" type="checkbox">
+                <span class="slider"/>  
+            </label>
+            <small>Subscribe</small>
+            <label class="switch">
+                <input class="checkbox" type="checkbox">
+                <span class="slider"/> 
+            </label>
+            <small>Subscribe</small>
+        </div>
+
+        <p><b>Radio buttons</b></p>
+        <span>Gender : 
+             <input type="radio" checked name="gender"><label>Male</label> 
+            <input type="radio" name="gender"><label>Female</label>
+        </span>
+
+        <p><b>Buttons</b></p>
+        <span>
+            <button>Active</button>
+            <button>Hover</button>
+            <button>Danger</button> 
+            <button>Hover</button>
+            <button>Disabled</button>
+            <button>+</button>
+            <button>-</button> 
+        </span>
+
+        <p><b>Text area</b></p>
+        <textarea placeholder="Enter some text..." rows="5" cols="60"></textarea>
+
+</body>
+
+</html>

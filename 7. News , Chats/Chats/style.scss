@@ -1,0 +1,54 @@
+.container {
+    background-color: #F5F5F5;
+    height: 550px;
+    display: grid;
+    grid-template: repeat(6, 1fr) / 1fr 2fr 1fr;
+    row-gap: 10px;
+    .message:nth-child(2n) {
+        background-color: #FFB6C1;
+        border-bottom-left-radius: 0%
+    }
+    .message:nth-child(2n+1) {
+        background-color: #ADD8E6;
+        border-bottom-right-radius: 0%
+    }
+    .user-girl {
+        padding: 10px;
+        img {
+            height: 60px;
+            float: right;
+            margin-left: 5px;
+        }
+        .info {
+            float: right;
+        }
+    }
+    .user-boy {
+        padding: 10px;
+        img {
+            height: 60px;
+            float: left;
+            margin-right: 5px;
+        }
+        .info {
+            float: left;
+        }
+    }
+    .message {
+        border-radius: 20px;
+        grid-column: 2;
+        p {
+            padding: 12px 20px;
+        }
+    }
+}
+
+.user-boy,
+.user-girl {
+    p {
+        margin-bottom: 0%;
+    }
+    small {
+        color: #BBC5D1;
+    }
+}

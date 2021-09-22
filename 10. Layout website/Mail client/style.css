@@ -1,0 +1,233 @@
+body {
+  min-width: 640px;
+}
+
+.head {
+  height: 100px;
+  border-bottom: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head img {
+  height: 60px;
+  padding: 20px 20px;
+  padding-left: 40px;
+}
+
+.head :nth-child(2) img {
+  padding-left: 20px;
+}
+
+.head p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+}
+
+.head p:nth-child(2) {
+  font-size: 25px;
+}
+
+.main {
+  height: 80%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aside {
+  height: 100%;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aside ul {
+  list-style: none;
+  width: 100%;
+  padding: 0%;
+}
+
+.aside ul img {
+  padding-left: 30px;
+  padding-right: 15px;
+  width: 20px;
+}
+
+.aside ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  height: 50px;
+}
+
+.aside ul li:nth-child(1) {
+  background-color: #F4E4E4;
+}
+
+.aside ul li:hover {
+  background-color: #F4E4E4;
+}
+
+.content {
+  height: 100%;
+  width: calc(100% - 200px);
+  padding: 10px 20px;
+}
+
+.content ul {
+  margin: 0%;
+  padding: 5px;
+}
+
+.content ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 2fr 4fr 1fr;
+      grid-template: 1fr / 2fr 4fr 1fr;
+  list-style: none;
+  border-bottom: 2px solid #E3E3E3;
+  padding: 5px;
+}
+
+.content ul li .template {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content ul li span:nth-child(2) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content ul li img {
+  height: 20px;
+  padding: 10px 20px;
+  padding-right: 30px;
+}
+
+.content ul li .addres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content ul li .info {
+  color: #A4ADB5;
+  margin-left: 8px;
+}
+
+.content ul li .time-pin {
+  justify-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content ul li .time-pin img {
+  padding-right: 10px;
+}
+
+.content ul li:hover {
+  background-color: #ECECEC;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F5F5F5;
+}
+
+@media (max-width: 1020px) {
+  .container {
+    height: 160vh;
+  }
+  .container .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 765px) {
+  .container {
+    height: 160vh;
+  }
+  .container .aside {
+    width: 80px;
+  }
+  .container .aside .punkt {
+    display: none;
+  }
+  .container .aside img {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .container .content {
+    height: 500px;
+  }
+  .container .content ul li {
+    height: 80px;
+    -ms-grid-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 5fr 2fr;
+        grid-template: 1fr 1fr 1fr/ 5fr 2fr;
+  }
+  .container .content ul li .template {
+    display: contents;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .content ul li .time-pin {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .container .content ul li .info {
+    padding-left: 61px;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .container .content ul li .messages {
+    padding-left: 69px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,242 @@
+.container {
+  width: 90%;
+  height: 500px;
+  margin: 20px;
+  min-width: 400px;
+  -webkit-box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.66);
+          box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.66);
+}
+
+.container form {
+  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3fr 1fr 1px 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 3fr 1fr 1px 1fr / 1fr 1fr;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container form .registr,
+.container form .detail {
+  padding-left: 40px;
+  padding-top: 20px;
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container form .registr .box,
+.container form .detail .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.container form .registr .box input,
+.container form .registr .box select,
+.container form .detail .box input,
+.container form .detail .box select {
+  border: none;
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-bottom: solid 2px #B2B2B0;
+  outline: none;
+}
+
+.container form .registr .box input::-webkit-input-placeholder,
+.container form .registr .box select::-webkit-input-placeholder,
+.container form .detail .box input::-webkit-input-placeholder,
+.container form .detail .box select::-webkit-input-placeholder {
+  color: #B2B2B0;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container form .registr .box input:-ms-input-placeholder,
+.container form .registr .box select:-ms-input-placeholder,
+.container form .detail .box input:-ms-input-placeholder,
+.container form .detail .box select:-ms-input-placeholder {
+  color: #B2B2B0;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container form .registr .box input::-ms-input-placeholder,
+.container form .registr .box select::-ms-input-placeholder,
+.container form .detail .box input::-ms-input-placeholder,
+.container form .detail .box select::-ms-input-placeholder {
+  color: #B2B2B0;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container form .registr .box input::placeholder,
+.container form .registr .box select::placeholder,
+.container form .detail .box input::placeholder,
+.container form .detail .box select::placeholder {
+  color: #B2B2B0;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container form .registr .box .data::-webkit-input-placeholder,
+.container form .detail .box .data::-webkit-input-placeholder {
+  color: black;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container form .registr .box .data:-ms-input-placeholder,
+.container form .detail .box .data:-ms-input-placeholder {
+  color: black;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container form .registr .box .data::-ms-input-placeholder,
+.container form .detail .box .data::-ms-input-placeholder {
+  color: black;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container form .registr .box .data::placeholder,
+.container form .detail .box .data::placeholder {
+  color: black;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container form .registr .boxs,
+.container form .detail .boxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container form .registr .boxs .box,
+.container form .detail .boxs .box {
+  width: 50%;
+}
+
+.container form .detail {
+  width: 100%;
+  height: 100%;
+}
+
+.container form .detail input {
+  height: 48px;
+}
+
+.container form .agrees {
+  width: 100%;
+  height: 100%;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  margin-left: 40px;
+}
+
+.container form hr {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.container form footer {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.container form footer button {
+  margin-right: 50px;
+  width: 180px;
+  height: 35px;
+  color: white;
+  background-color: #008B8B;
+  border: none;
+}
+
+@media (max-width: 900px) {
+  .container {
+    height: 820px;
+  }
+  .container form {
+    display: block;
+  }
+  .container form .registr {
+    height: 320px;
+  }
+  .container form .detail {
+    height: 280px;
+  }
+  .container form .agrees {
+    height: 100px;
+  }
+  .container form footer {
+    height: 80px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    height: 970px;
+    margin: 20px;
+  }
+  .container form .registr {
+    height: 350px;
+  }
+  .container form .registr .boxs {
+    display: block;
+    width: 100%;
+  }
+  .container form .registr .boxs .box {
+    width: 95%;
+  }
+  .container form .registr .boxs .box input {
+    height: 43px;
+    width: 500px;
+  }
+  .container form .registr .boxs .box:nth-child(2) {
+    padding-left: 47px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .container form .detail {
+    padding-top: 50px;
+    padding-left: 30px;
+    height: 400px;
+  }
+  .container form .detail .boxs {
+    display: block;
+  }
+  .container form .detail .boxs .box {
+    height: 43px;
+    width: 95%;
+  }
+  .container form .detail .boxs .box input {
+    height: 43px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,61 @@
+﻿.header {
+    background-color: powderblue;
+    height: 80px;
+}
+
+img {
+    float: left;
+    height: 80px;
+    padding: 0px 20px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    height: 80px;
+    margin: 0%;
+    box-sizing: border-box;
+    box-sizing: content-box;
+}
+
+.list {
+    margin: 0px;
+}
+
+.list li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    background-color: cyan;
+    border: solid 1px black;
+}
+
+.navbar {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.content {
+    height: max-content;
+}
+
+.left {
+    width: 20%;
+    /*height: 248.7px;*/
+    background-color: cornflowerblue;
+    /*display: inline-block;*/
+    float: left;
+}
+
+.right {
+    background-color: lightsteelblue;
+    width: 80%;
+    display: inline-block;
+}
+
+.footer {
+    background-color: dodgerblue;
+    height: 100px;
+}

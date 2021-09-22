@@ -1,0 +1,29 @@
+.grey-text {
+    margin: 0%;
+    color: #ACB0BB;
+    line-height: 15px;
+}
+
+.main-text {
+    margin: 5px;
+    padding: 0%;
+    line-height: 15px;
+}
+
+.dedicated {
+    color: rgb(76, 100, 233);
+}
+
+dl {
+    background-color: #F5F5F5;
+    padding: 20px;
+    width: max-content;
+}
+
+dt {
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

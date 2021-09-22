@@ -1,0 +1,84 @@
+.photo {
+  padding-top: 40px;
+  position: relative;
+  margin-right: 40px;
+}
+
+.photo p {
+  border-end-end-radius: 20px;
+  border-end-start-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #37516B;
+  color: white;
+  width: 350px;
+  height: 40px;
+  position: absolute;
+  bottom: 0px;
+  top: 250px;
+}
+
+body {
+  min-width: 450px;
+  padding-left: 20px;
+  display: -ms-grid;
+  display: grid;
+  padding-bottom: 70px;
+  grid-template: "first-text photo1" "second-text photo2";
+}
+
+body .text-content:nth-child(1) {
+  grid-area: first-text;
+}
+
+body .text-content:nth-child(3) {
+  grid-area: second-text;
+}
+
+body .photo:nth-child(1) {
+  grid-area: photo1;
+}
+
+body .photo-content:nth-child(3) {
+  grid-area: photo2;
+}
+
+@media (max-width: 950px) {
+  body {
+    grid-template: "first-text first-text" "photo1 photo2" "second-text second-text";
+  }
+  body .text-content {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 756px) {
+  body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    grid-template: "first-text" "first-text" "photo1" "second-text" "photo2";
+  }
+  body .text-content {
+    width: 450px;
+    padding-top: 30px;
+  }
+  body .photo {
+    padding-left: 30px;
+  }
+}
+
+.text-content {
+  padding-right: 20px;
+}
+
+img {
+  width: 350px;
+}
+/*# sourceMappingURL=style.css.map */

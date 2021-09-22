@@ -1,0 +1,40 @@
+/* bilo napisano ne ispozlovat klassi */
+tr:nth-child(2n) {
+    background-color: #E9E9E9;
+}
+
+tr:nth-child(2n+1) {
+    background-color: #F5F5F5;
+}
+
+table * {
+    text-align: center;
+    padding: 10px;
+    height: 45px;
+    width: 250px;
+}
+
+th {
+    background-color: #ADD8E6;
+    margin: 0%;
+    padding: 0%;
+    position: sticky;
+    top: 0%;
+}
+
+tbody td {
+    padding: 0% 5px;
+}
+
+thead {
+    position: relative;
+    z-index: 1;
+}
+
+table {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    border-spacing: 0px;
+    height: 580px;
+}

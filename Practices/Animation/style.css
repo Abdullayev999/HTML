@@ -1,0 +1,111 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border: 2px solid black;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.box:hover {
+  background-color: red;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+@-webkit-keyframes test-animation {
+  0% {
+    background-color: aliceblue;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  25% {
+    background-color: gray;
+    -webkit-transform: translate(300px, 0px);
+            transform: translate(300px, 0px);
+  }
+  50% {
+    background-color: gold;
+    -webkit-transform: translate(300px, 300px);
+            transform: translate(300px, 300px);
+  }
+  75% {
+    background-color: green;
+    -webkit-transform: translate(0px, 300px);
+            transform: translate(0px, 300px);
+  }
+  100% {
+    background-color: aqua;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes test-animation {
+  0% {
+    background-color: aliceblue;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  25% {
+    background-color: gray;
+    -webkit-transform: translate(300px, 0px);
+            transform: translate(300px, 0px);
+  }
+  50% {
+    background-color: gold;
+    -webkit-transform: translate(300px, 300px);
+            transform: translate(300px, 300px);
+  }
+  75% {
+    background-color: green;
+    -webkit-transform: translate(0px, 300px);
+            transform: translate(0px, 300px);
+  }
+  100% {
+    background-color: aqua;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes myAnimation {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
+
+@keyframes myAnimation {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
+
+.test {
+  width: 100px;
+  height: 100px;
+  background-color: gainsboro;
+  border: 2px solid black;
+}
+
+.test:hover {
+  -webkit-animation-name: test-animation;
+          animation-name: test-animation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background-color: #923158;
+    height: 90px;
+}
+
+.menyu {
+    background-color: #6E1237;
+    height: 60px;
+}
+
+.container-Menyu {
+    height: 420px;
+}
+
+h3 {
+    padding: 5px 20px;
+}
+
+.footer {
+    background-color: #6E1237;
+    height: 60px;
+}
+
+.submenyu1 {
+    height: 92%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.submenyu2 {
+    background-color: #B65B80;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.submenyu2 h3 {
+    padding-right: 220px;
+}
+
+.submenyu3 {
+    background-color: #B65B80;
+    height: 60%;
+    width: 15%;
+    margin-bottom: 134px;
+}
+
+.submenyu3 p {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.container-Menyu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ASIDE1 {
+    background-color: #B65B80;
+    height: 50%;
+    width: 100%;
+}
+
+.SECTION1 {
+    margin: 15px 15px;
+    background-color: #DB92AF;
+    height: 50%;
+    width: 85%;
+}
+
+.SECTION2 {
+    margin: 15px 15px;
+    background-color: #DB92AF;
+    height: 50%;
+    width: 85%;
+}
+
+.ASIDE2 {
+    background-color: #B65B80;
+    height: 80%;
+    width: 100%;
+    margin-bottom: 70px;
+}

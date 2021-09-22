@@ -1,0 +1,42 @@
+.bg-blue {
+    background-color: #1B5589;
+}
+
+.bg-green {
+    background-color: #6FD084;
+}
+
+.bg-green-black {
+    background-color: #25A640;
+}
+
+.icons {
+    height: 40px;
+}
+
+.icons-mini {
+    height: 26px;
+}
+
+.icon {
+    height: 40px;
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+
+.col ul {
+    list-style: none;
+}
+
+.bg-grey-light {
+    background-color: #F5F5F5;
+}
+
+.bg-pink {
+    background-color: #F98691;
+}
+
+.bg-light-blue {
+    background-color: #37B0C1;
+}

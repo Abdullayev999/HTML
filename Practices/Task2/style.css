@@ -1,0 +1,38 @@
+.container {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10% 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F5F5F5;
+}
+
+.container .box {
+  margin: 4% 4%;
+  width: 95%;
+  background-color: #ED9EAE;
+}
+
+.container .box ol .num {
+  padding-left: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #C66376;
+  margin-top: 2%;
+  margin-right: 5%;
+}
+
+.container .box ol .num li {
+  letter-spacing: 1px;
+  margin-left: 2%;
+  word-spacing: 10pxs;
+  background-color: #9E354A;
+  list-style-position: unset;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+table {
+  width: 800px;
+  height: 800px;
+  border-spacing: 0px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  border: 2px solid #ADD8E6;
+  background-color: #ADD8E6;
+}
+
+table tr:nth-child(even) {
+  background-color: #F5F5F5;
+}
+
+table tr:nth-child(odd) {
+  background-color: #E9E9E9;
+}
+
+table .empty {
+  position: fixed;
+  z-index: 1;
+  background-color: #ADD8E6;
+}
+
+table .leftMenyu {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Position the navbar at the bottom of the page */
+  /* Full width */
+}
+
+table .topMenyu th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-left: 10px;
+  width: 200px;
+  height: 69px;
+}
+/*# sourceMappingURL=style.css.map */

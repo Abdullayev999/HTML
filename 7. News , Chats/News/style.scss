@@ -1,0 +1,98 @@
+.container {
+    padding: 0px 30px;
+    background-color: #ADD8E6;
+    height: 800px;
+    box-sizing: content-box;
+    display: grid;
+    margin: 10px;
+    gap: 20px;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    max-width: 1000px;
+    .box-for-photo>p {
+        font-size: 20px;
+    }
+    .first {
+        .card:nth-child(1) {
+            height: 27%;
+            .box-for-photo {
+                height: 30%;
+            }
+        }
+        .card:nth-child(2) {
+            height: 20%;
+            .box-for-photo {
+                height: 50%;
+            }
+        }
+        .card:nth-child(3) {
+            height: 26%;
+            .box-for-photo {
+                height: 25%;
+            }
+        }
+    }
+    .second {
+        .card:nth-child(1) {
+            height: 22%;
+            .box-for-photo {
+                height: 30%;
+            }
+        }
+        .card:nth-child(2) {
+            height: 25%;
+            .box-for-photo {
+                height: 40%;
+            }
+        }
+        .card:nth-child(3) {
+            height: 30%;
+            .box-for-photo {
+                height: 30%;
+            }
+        }
+    }
+    .third {
+        .card:nth-child(1) {
+            height: 25%;
+            .box-for-photo {
+                height: 30%;
+            }
+        }
+        .card:nth-child(2) {
+            height: 30%;
+            .box-for-photo {
+                height: 50%;
+            }
+        }
+        .card:nth-child(3) {
+            height: 33%;
+            .box-for-photo {
+                height: 40%;
+            }
+        }
+    }
+}
+
+.card {
+    margin: 10px;
+    background-color: white;
+    width: 100%;
+    .box-for-photo {
+        color: #A4A4A4;
+        background-color: #C3C3C3;
+        p {
+            margin: 0%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .title {
+        padding: 10px;
+    }
+    p {
+        margin: 4px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}

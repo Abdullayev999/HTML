@@ -1,0 +1,26 @@
+.centr {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.red {
+    color: #B96855;
+    background-color: #E7E7E7;
+}
+
+.tags {
+    color: #95C2BE;
+    background-color: #E7E7E7;
+}
+
+.black {
+    color: black;
+}
+
+body {
+    background-color: #F5F5F5;
+}
